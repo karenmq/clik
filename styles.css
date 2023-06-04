@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: blueviolet;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+header {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.menu-item {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#banner {
+    text-align: center;
+    background-image: url(fasteners.jpg);
+    padding: 15%;
+}
+
+#menu {
+    background-color: #30302d;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: auto;
+    padding: 1%;
+}
