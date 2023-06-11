@@ -11,15 +11,13 @@ body {
     color: #ffffff;
 }
 
-#logo {
-    width: 40%;
+.top-bar-item {
+    padding: 0 15px 0 15px;
 }
 
-
-#banner {
-    text-align: center;
-    background-image: url(fasteners.jpg);
-    padding: 15%;
+#logo {
+    width: 40%;
+    padding: 10px;
 }
 
 #menu-container {
@@ -29,25 +27,63 @@ body {
 }
 
 #menu {
-    display: flex;
-    /* justify-content: space-around; */
     list-style-type: none;
-    margin: auto;
+    background-color: pink;
+    /* margin: auto; */
     /* padding: 1%; */
 }
 
 .menu-item {
     color: #000000;
-    padding: 0 20px 0 20px;
+    display: inline;
+    /* float: right; */
+    padding: 0 20px 0 0;
+}
+
+.menu-item a {
     text-decoration: none;
 }
 
+#banner {
+    text-align: center;
+    background-image: linear-gradient(to bottom left, rgba(191, 191, 11, 0.5), rgba(0,0,0,0.5)), url(fasteners.jpg);
+    padding: 15%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container {
+    background-color: plum;
+    position: relative;
+    margin: 0;
+    /* min-height: 100%; */
+}
+
+.categories-wrap {
+    padding-bottom: 10rem;
+}
+
+
 footer {
-    background-color: blueviolet;
+    background: purple;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(footer-screws-image.jpg);    
     bottom: 0;
     position: absolute;
     width: 100%;
 }
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+/* #footer-container {
+    background-color: rgba (0,0,0,1);
+} */
 
 /* RESPONSIVE LAYOUTS */
 
@@ -66,6 +102,18 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+    }
+
+    .menu-item {
+        padding: 20px;
     }
 
 }
